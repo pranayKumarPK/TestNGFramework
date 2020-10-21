@@ -1,0 +1,29 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 3, Errors: 0, Skipped: 5, Time elapsed: 141.378 s <<< FAILURE! - in TestSuite
+LogOut(com.hrm.testcases.LogoutPageTest)  Time elapsed: 3.588 s  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+The element reference of <a id="user-dropdown" class="dropdown-button waves-effect" href="javascript:;"> is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LT124', ip: '192.168.225.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201012085804, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 22996, moz:profile: C:\Users\pranay.kumar\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 47455c9d-7a7c-4034-81ee-4c9...}
+Session ID: 47455c9d-7a7c-4034-81ee-4c9d5ae9f24e
+	at com.hrm.testcases.LogoutPageTest.LogOut(LogoutPageTest.java:44)
+
+setUp(com.hrm.testcases.AddDisciplinaryCase)  Time elapsed: 35.363 s  <<< FAILURE!
+org.openqa.selenium.ElementNotInteractableException: 
+Element <span class="left-menu-title"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LT124', ip: '192.168.225.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201012085804, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 18892, moz:profile: C:\Users\pranay.kumar\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 5cf3f95d-c7cf-44c3-b48d-52a...}
+Session ID: 5cf3f95d-c7cf-44c3-b48d-52afa322f2af
+	at com.hrm.testcases.AddDisciplinaryCase.setUp(AddDisciplinaryCase.java:42)
+
+login(com.hrm.testcases.LoginPageTest)  Time elapsed: 10.786 s  <<< FAILURE!
+java.lang.AssertionError: expected [Dashboard] but found []
+	at com.hrm.testcases.LoginPageTest.login(LoginPageTest.java:53)
+

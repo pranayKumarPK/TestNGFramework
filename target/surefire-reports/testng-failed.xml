@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [HRMBasicFlows]" parallel="classes">
+  <listeners>
+    <listener class-name="com.hrm.Listeners.TestListeners"/>
+  </listeners>
+  <test thread-count="1" verbose="0" name="FirefoxTest(failed)" parallel="classes">
+    <parameter name="myBrowser" value="Firefox"/>
+    <classes>
+      <class name="com.hrm.testcases.AddDisciplinaryCase">
+        <methods>
+          <include name="addDisciplineCase"/>
+          <include name="validateDisciplineCaseTitle"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.hrm.testcases.AddDisciplinaryCase -->
+      <class name="com.hrm.testcases.LogoutPageTest">
+        <methods>
+          <include name="LogOut"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.hrm.testcases.LogoutPageTest -->
+      <class name="com.hrm.testcases.LoginPageTest">
+        <methods>
+          <include name="login"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.hrm.testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [HRMBasicFlows] -->

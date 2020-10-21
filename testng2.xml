@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="HRMBasicFlows">
+  <listeners>
+    <listener class-name="com.hrm.Listeners.TestListeners"/>
+  </listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.hrm.testcases.LogoutPageTest"/>
+      <class name="com.hrm.testcases.LoginPageTest"/>
+      <class name="com.hrm.testcases.AddDisciplinaryCase"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- HRMBasicFlows -->

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite thread-count="1" name="HRMBasicFlows" parallel="classes">
+    <listeners>
+        <listener class-name="com.hrm.Listeners.TestListeners"/>
+    </listeners>
+    <!--<parameter name="myBrowser" value="Chrome"></parameter> -->
+    <test name="ChromeTest" enabled="false">
+       <parameter name="myBrowser" value="Chrome"></parameter>
+    <classes>
+        <class name="com.hrm.testcases.LogoutPageTest"/>
+        <class name="com.hrm.testcases.LoginPageTest"/>
+        <class name="com.hrm.testcases.AddDisciplinaryCase"/>
+    </classes>
+</test> <!-- Test -->
+   <test name="FirefoxTest" enabled="true">
+        <parameter name="myBrowser" value="Firefox"></parameter>
+        <classes>
+            <class name="com.hrm.testcases.LogoutPageTest"/>
+            <class name="com.hrm.testcases.LoginPageTest"/>
+            <class name="com.hrm.testcases.AddDisciplinaryCase"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- HRMBasicFlows -->
