@@ -7,7 +7,7 @@
         <listener class-name="com.hrm.Listeners.TestListeners"/>
     </listeners>
     <!--<parameter name="myBrowser" value="Chrome"></parameter> -->
-    <test name="ChromeTest" enabled="false">
+    <test name="ChromeTest" enabled="true">
        <parameter name="myBrowser" value="Chrome"></parameter>
     <classes>
         <class name="com.hrm.testcases.LogoutPageTest"/>
@@ -15,7 +15,7 @@
         <class name="com.hrm.testcases.AddDisciplinaryCase"/>
     </classes>
 </test> <!-- Test -->
-   <test name="FirefoxTest" enabled="true">
+   <test name="FirefoxTest" enabled="false">
         <parameter name="myBrowser" value="Firefox"></parameter>
         <classes>
             <class name="com.hrm.testcases.LogoutPageTest"/>
