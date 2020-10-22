@@ -58,19 +58,19 @@ public class TestBase {
 		String browserName=browser;
 		if (browserName.equalsIgnoreCase("Chrome")) {
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\Resources\\Drivers\\chromedriver.exe");
-//			driver=new ChromeDriver();
+			driver=new ChromeDriver();
 
-			 desired=DesiredCapabilities.chrome();
+// 			 desired=DesiredCapabilities.chrome();
 
-			desired.setPlatform(Platform.WINDOWS);
-			System.out.println("H");
-			try {
-				 url = new URL("http://192.168.225.231:4444/wd/hub");
-			}
-			catch (Exception e){
-				e.printStackTrace();
-			}
-			driver= new RemoteWebDriver(url,desired);
+// 			desired.setPlatform(Platform.WINDOWS);
+// 			System.out.println("H");
+// 			try {
+// 				 url = new URL("http://192.168.225.231:4444/wd/hub");
+// 			}
+// 			catch (Exception e){
+// 				e.printStackTrace();
+// 			}
+// 			driver= new RemoteWebDriver(url,desired);
 		}
 		else if(browserName.equalsIgnoreCase("Firefox"))
 		{
