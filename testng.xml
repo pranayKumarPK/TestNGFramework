@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 
-<suite thread-count="1" name="HRMBasicFlows" parallel="classes">
+<suite name="HRMBasicFlows" parallel="classes">
     <listeners>
         <listener class-name="com.hrm.Listeners.TestListeners"/>
     </listeners>
